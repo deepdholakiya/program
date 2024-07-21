@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<input type="number" id="text1" placeholder="Enter first number">
+    <input type="number" id="text2" placeholder="Enter second number">
+	<p id="res1"></p>
+
+    <button onclick="add()">Add</button>
+    <button onclick="sub()">Sub</button>
+	<button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+
+	<script>
+		function add()
+		{
+			var val1=parseFloat(document.getElementById("text1").value)
+			var val2=parseFloat(document.getElementById("text2").value)
+
+			var res_add=val1+val2
+
+			document.getElementById("res1").innerHTML=res_add
+		}
+	</script>
+	<script>
+		function sub()
+		{
+			var val1=parseFloat(document.getElementById("text1").value)
+			var val2=parseFloat(document.getElementById("text2").value)
+
+			var res_sub=val1-val2
+
+			document.getElementById("res1").innerHTML=res_sub
+		}
+	</script>
+    <script>
+		function mul()
+		{
+			var val1=parseFloat(document.getElementById("text1").value)
+			var val2=parseFloat(document.getElementById("text2").value)
+
+			var res_mul=val1*val2
+
+			document.getElementById("res1").innerHTML=res_mul
+		}
+	</script>
+	<script>
+		function div()
+		{
+			var val1=parseFloat(document.getElementById("text1").value)
+			var val2=parseFloat(document.getElementById("text2").value)
+
+			var res_div=val1/val2
+
+			document.getElementById("res1").innerHTML=res_div
+		}
+	</script>
+</body>
+</html>
