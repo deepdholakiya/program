@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style>
+		.sample{
+			width: 40%;
+			float: left;
+		}	
+		.input_range{
+			width: 100%;
+		}
+		.right{
+			float: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="sample">
+		<input type="range" min="1000" max="10000" class="input_range" oninput="changeRangebarValue()" id="input_range">
+		<span class="left">1000</span>
+		<span class="right" id="right_value">10000</span>
+	</div>
+	<script >
+		function changeRangebarValue() {
+			const inputValue = document.getElementById('input_range').value;
+			document.getElementById('right_value').innerText = inputValue;
+		}
+	</script>
+</body>
+</html>
