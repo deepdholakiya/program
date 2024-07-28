@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style >
+		body{
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper{
+			width: 100%;
+			height: 1200px;
+			float: left;
+			background-color:lightgray ;
+		}
+		.btn_div{
+			width: 20%;
+			float: left;
+		}
+		.popupcontainer{
+			background-color: rgba(0, 0, 0, 0.8);
+			width: 100%;
+			height: 800px;
+			position: absolute;
+			display: none;
+		}
+		.loginpopup{
+			width: 50%;
+			margin: 100px 25% 0px;
+			background-color: aliceblue;
+			height: 200px;
+			border: 1px solid black;
+			box-sizing: border-box;
+			float: left;
+			position: absolute;
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper" id="wrapper">
+		<div class="btn_div"><button onclick="openpopup()">login</button></div>
+		<a href="#">abcd</a>
+	</div>
+	<div class="popupcontaier" id="popupcontaier"></div>
+	<div class="loginpopup" id="loginpopup">
+		<a href="#" onclick="closepopup()">&times;</a>
+	</div>
+	<script >
+		function openpopup()
+		{
+			document.getElementById("popupcontainer").style.display="block"
+			document.getElementById("loginpopup").style.display="block"
+		}
+		function closepopup()
+		{
+			document.getElementById("popupcontainer").style.display="none"
+			document.getElementById("loginpopup").style.display="none"
+		}
+	</script>
+</body>
+</html>
