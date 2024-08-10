@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<button onclick="openAlert()">openalert</button>
+	<button onclick="openConfirm()">openconfirm</button>
+	<button onclick="openPrompt()">openprompt</button>
+
+	<script >
+		function openAlert() 
+		{
+			alert("this is an example")
+		}
+
+		function openConfirm()
+		{
+			var r=confirm("are you sure?")
+
+			if (r==true) 
+			{
+				alert ("you pressed ok!")
+			}
+			else
+			{
+				alert("you pressed cancel")
+			}
+		}
+
+		function openPrompt() 
+		{
+			var x= prompt("enter name:")
+			if(x==null)
+			{
+				alert("welcome guest")
+			}
+			else
+			{
+				alert("welcome ")
+			}
+		}
+	</script>
+</body>
+</html>
