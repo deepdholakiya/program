@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var student_info=[1,"abc","abc@gmail.com",8856835565,89.76,"pune"]
+		document.write(student_info+"<br>")
+		document.write(typeof student_info+"<br>")
+
+		document.write("roll no is:",student_info[0]+"<br>")
+		document.write("name is:",student_info[1]+"<br>")
+
+		// to find the length of array
+
+		len_student_info=student_info.length
+		document.write(len_student_info)
+
+		for (var z=0; z<=student_info.length-1;z++)
+		{
+			document.write(student_info[z]+"<br>")
+		}
+		 student_info[0]=10
+		 document.write(student_info+"<br>")
+
+		 student_info[student_info.length-1]="wakad"
+		 document.write(student_info+"<br>")
+
+		 //emp
+
+		 var emp_details=[101,'peter',10000,['python','testing'],'manager']
+		 document.write(emp_details+"<br>")
+		 document.write(emp_details[3]+"<br>")
+		 document.write(emp_details[3][0]+"<br>")
+		 document.write(emp_details[3][1]+"<br>")
+
+		 var arr=[]//empty array
+		 arr[0]=1
+		 arr[1]="john"
+		 document.write(arr)
+
+		 
+	</script>
+</body>
+</html>
