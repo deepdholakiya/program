@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		//concat
+		var arr1=["one","two","three"];
+		var arr2=["four","five","six"];
+		var arr3=["seven"]
+		var res=arr3.concat(arr3,arr1)
+		document.write(res+"<br>")
+
+		//unshift
+
+		var arr1=["one","two","three"];
+		var res=arr1.unshift("newvalue1","newvalue2")
+		document.write(res+"<br>")// return new length of the array after adding value
+		document.write(arr1+"<br>")
+
+		//shift
+		var arr1=["one","two","three"];
+		var res=arr1.shift()
+		document.write(res+"<br>") //return removed element
+		document.write(arr1+"<br>")
+
+		//push
+		var arr1=['one',"two","threee"];
+		var res=arr1.push("newvalue1","newvalue2")
+		document.write(arr1+"<br>")
+		document.write(res+"<br>")
+
+		//pop
+		var arr1=['one',"two","threee"];
+		var res=arr1.pop()
+		document.write(arr1+"<br>")
+		document.write(res+"<br>")
+
+		//splice
+		var arr1=["one","two","three","four"];
+		//arr1.splice(1,2,"new1","new2")
+		//arr1.splice(1,0,"new1","new2")
+		arr1.splice(1,2)
+		document.write(arr1+"<br>");
+
+		//tostring
+		var arr1=["one","two","three",101];
+		document.write(typeof arr1+"<br>")
+		var res=arr1.tostring();
+		document.write(res[0]+"<br>")
+		document.write(typeof res+"<br>")
+
+		//join
+		var arr1=["one","two","three"];
+		var str=arr1.join("*")
+		document.write(str+"<br>")
+		document.write(typeof str+"<br>")
+
+		//reverse
+		var arr1=["one","two","three","xyz"];
+		arr1.reverse();
+		document.write(arr1+"<br>")
+
+		//sort
+		var arr1=["one","two","xyz","santosh","shreeram"];
+		arr1.sort();
+		document.write(arr1+"<br>")
+		arr1.reverse();
+		document.write(arr1+"<br>")
+
+		//isarray
+		var arr="abc";
+		var arr2=["xyz",1001]
+		// var arr1={name:"abc",fname:"xyz"}
+		document.write(Array.isArray(arr2)+"<br>")
+
+		//foreach
+		var arr=["python","php","java"]
+		function test(a,b)
+		 {
+			document.write(b+"is :"+a+"<br>");
+			document.write(a+"<br>");
+		}
+		arr.forEach(test)
+
+		//some
+		var arr=[4,10,60,70]
+		function test(a)
+		{
+			return a>6
+		}
+		document.write(arr.some(test)+"<br>")
+
+		//findindex
+		var arr=[2,10,6,9]
+		function tesr(a) 
+		{
+			return a>6
+		}
+		document.write(arr.findindex(test)+"<br>")
+
+		//find
+		var arr=[8,10,6,9]
+		function test(a) 
+		{
+			return a>8
+		}
+		document.write(arr.find(test)+"<br>")
+
+		//filter
+		var arr=[8,10,6,9]
+		function test(a) 
+		{
+			return val>8
+		}
+		document.write(arr.filter(test))
+	</script>
+</body>
+</html>
