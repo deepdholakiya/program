@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		
+		//charat
+		var str="this is string";
+		var pos=str.charAt(8)
+		document.write(pos+"<br>")
+
+		//charcodeat
+		var str="this is string";
+		var pos=str.charCodeAt(5)
+		document.write(pos+"<br>")
+
+		//fromcharcode
+
+		// var res=string.fromCharCode(90,33,31,50)
+		// document.write(res+"<br>")
+
+		// //concat
+		// var str="this is a string";
+		// var str1="hello world";
+		// var str2="how are you ?";
+		// var res=str1.concat("",str2,"",str)
+		// document.write(res+"<br>")
+
+		//endwith
+		var str="this is string";
+		var res=str.endsWith("g");
+		var res=str.endsWith("String");
+		var res=str.endsWith("is",4);
+		document.write(res+"<br>")
+
+		//startswith
+		var str="this is a String";
+		var res=str.startsWith("this");
+		var res=str.startsWith("t");
+		var res=str.startsWith("String",10);
+		document.write(res+"<br>")
+
+		//indexof 
+		var str="this is a String";
+		var res=str.indexOf("s")
+		document.write(res+"<br>")
+
+		//latsindexof
+		var str="this is string";
+		var res.str.lastIndexOf("s")
+		document.write(res+"<br>")
+
+		//include
+		var str="this is string";
+		var res=str.includes("x")
+		var res1=str.includes("str")
+		document.write(res1+"<br>")
+
+		//repeat
+		var str="this is string";
+		var res=str.repeat(4)
+		document.write(res+"<br>")
+
+		//match
+		var str="this is string_12@3";
+		var res=str.match(/s/gi);
+		document.write(res+"<br>")
+
+		//replace
+		var str="this is a string  string";
+		var res=str.replace(/string/g,"world")
+		document.write(res+"<br>")
+
+		//search
+		var str="this is string";
+		var res=str.search("s")
+		document.write(res)
+
+		//slice
+		var str="this is string";
+		var res=str.slice(2,6)
+		var res=str.slice(-8,-1)
+		var res=str.slice(0,1)
+		document.write(res+"<br>")
+	</script>
+</body>
+</html>
