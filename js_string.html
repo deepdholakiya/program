@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script>
+		var str1="this is 'string'";
+		document.write(str1+"<br>")
+		document.write(typeof str1+"<br>")
+
+		var str2='this is "string"';
+		document.write(str2+"<br>")
+		document.write(typeof str2+"<br>")
+
+		var str3= new String("this is 'string'");
+		document.write(str3+"<br>")
+		document.write(typeof str3+"<br>")
+
+var res=(str1==str3)
+		document.write(res+"<br>")
+
+		//to find the length of a string
+
+		var len_str=str1.length
+		document.write(len_str+"<br>")
+
+		//trim
+		var res2 =str1.trim()
+		document.write(res2+"<br>")
+		var len_str=res2.length
+		document.write(len_str+"<br>")
+
+		var res3=str1[4]
+		document.write(res3+"<br>")
+
+		for (var i = 0 ;i<str1.length - 1;i++) 
+		{
+			document.write(str1[i]+"<br>")
+		}
+		
+	</script>
+</body>
+</html>
